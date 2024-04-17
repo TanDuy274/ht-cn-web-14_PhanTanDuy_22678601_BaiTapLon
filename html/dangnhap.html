@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/icon/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header hide-on-mobile-tablet">
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="header_search">
+                <input type="text" class="header_search_input" placeholder="Bạn tìm gì&hellip;">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <div class="header_btn">
+                <a href="../html/about.html" class="header__btn__about">Giới thiệu</a>
+                <a href="#" class="header_btn_cart">
+                    <i class="header_btn_cart_icon ti-shopping-cart"></i>
+                    Giỏ hàng
+                </a>
+                <a href="../html/dangky.html" class="header_btn_question">Đăng ký</a>
+                <a href="#" class="header__btn__auth">Đăng nhập</a>
+            </div>
+        </div>
+
+        <div class="header show-on-mobile-tablet">
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="header_search">
+                <input type="text" class="header_search_input" placeholder="Bạn tìm gì&hellip;">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="header_btn">
+                <!-- <button> -->
+                <i class="header_btn__icon fa-solid fa-bars"></i>
+                <!-- </button> -->
+                <ul class="btn-list">
+                    <li class="btn-item">
+                        <a href="../html/about.html" class="btn-link btn-item__about">Giới thiệu</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__cart">
+                            Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangky.html" class="btn-link btn-item__question">Đăng ký</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__auth">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header show-on-mobile">
+            <div class="header_search">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="overlay"></div>
+            <div class="header_btn">
+                <!-- <button> -->
+                <i class="header_btn__icon fa-solid fa-bars"></i>
+                <!-- </button> -->
+                <ul class="btn-list">
+                    <li class="btn-item">
+                        <a href="../html/about.html" class="btn-link btn-item__about">Giới thiệu</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__cart">
+                            Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangky.html" class="btn-link btn-item__question">Đăng ký</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__auth">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal active">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+
+            <!-- login form -->
+            <div class="auth-form active">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <a href="../html/dangky.html" class="auth-form__switch-btn">Đăng ký</a>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập tên đăng nhập" id="name">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu của bạn"
+                                id="pass">
+                        </div>
+                        <span id="error"></span>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="#" class="auth-form__help-link auth-form__help-forgot">Quên mât khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <a href="../home.html" class="btn btn--normal auth-form__controls-back">TRANG CHỦ</a>
+                        <button class="btn btn--primary" id="btnDangNhap">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/home_menu.js"></script>
+    <script src="../assets/js/dangnhap.js"></script>
+</body>
+
+</html>

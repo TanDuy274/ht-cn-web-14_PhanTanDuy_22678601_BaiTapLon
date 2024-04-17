@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../assets/icon/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/reponsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header hide-on-mobile-tablet">
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="header_search">
+                <input type="text" class="header_search_input" placeholder="Bạn tìm gì&hellip;">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <div class="header_btn">
+                <a href="../html/about.html" class="header__btn__about">Giới thiệu</a>
+                <a href="#" class="header_btn_cart">
+                    <i class="header_btn_cart_icon ti-shopping-cart"></i>
+                    Giỏ hàng
+                </a>
+                <a href="../html/dangky.html" class="header_btn_question">Đăng ký</a>
+                <a href="../html/dangnhap.html" class="header__btn__auth">Đăng nhập</a>
+            </div>
+        </div>
+
+        <div class="header show-on-mobile-tablet">
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="header_search">
+                <input type="text" class="header_search_input" placeholder="Bạn tìm gì&hellip;">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="header_btn">
+                <!-- <button> -->
+                <i class="header_btn__icon fa-solid fa-bars"></i>
+                <!-- </button> -->
+                <ul class="btn-list">
+                    <li class="btn-item">
+                        <a href="../html/about.html" class="btn-link btn-item__about">Giới thiệu</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__cart">
+                            Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangky.html" class="btn-link btn-item__question">Đăng ký</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangnhap.html" class="btn-link btn-item__auth">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header show-on-mobile">
+            <div class="header_search">
+                <i class="header_search_icon ti-search"></i>
+            </div>
+            <a href="../index.html" class="header_home">
+                <img src="../assets/img/home/logo.png" alt="logo" class="header_logo">
+            </a>
+            <div class="overlay"></div>
+            <div class="header_btn">
+                <!-- <button> -->
+                <i class="header_btn__icon fa-solid fa-bars"></i>
+                <!-- </button> -->
+                <ul class="btn-list">
+                    <li class="btn-item">
+                        <a href="../html/about.html" class="btn-link btn-item__about">Giới thiệu</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="#" class="btn-link btn-item__cart">
+                            Giỏ hàng
+                        </a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangky.html" class="btn-link btn-item__question">Đăng ký</a>
+                    </li>
+                    <li class="btn-item">
+                        <a href="../html/dangnhap.html" class="btn-link btn-item__auth">Đăng nhập</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div class="container" style="background-color: #fff;">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table">
+                            <thead>
+                                <tr class="table-row">
+                                    <th class="table-stt">STT</th>
+                                    <th class="table-img">Hình ảnh</th>
+                                    <th class="table-name">Tên sản phẩm</th>
+                                    <th class="table-dg">Đơn giá</th>
+                                    <th class="table-sl">Số lượng</th>
+                                    <th class="table-tt">Thành tiền</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="myTable">
+
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="font-weight-bold">Tổng thành tiền</td>
+                                    <td class="font-weight-bold"><label id="lblTongtien">0</label></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/cart.js" type="module"></script>
+</body>
+
+</html>
